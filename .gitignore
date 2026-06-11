@@ -1,0 +1,16 @@
+# Python virtual environment
+backend/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# React
+frontend/node_modules/
+frontend/dist/
+
+# Environment variables
+.env

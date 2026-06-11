@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4a3f9f;
+  --light-blue: #c0d0fe;
+  --light-form-bg: #f5eaff;
+  --dark-text: #1f1105;
+  color: #ffffff;
+  background-color: var(--primary);
+}
+
+a {
+  color: #4a3f9f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    180deg,
+    var(--primary) 0%,
+    var(--dark-text) 100%
+  );
+  color: #ffffff;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #cccccc;
+}
+
+input,
+label {
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #4a3f9f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #3d3287;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-action {
+  background: #f5eaff;
+  color: #1f1105;
+  border: 1px solid #d4c5e2;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.2s;
+}
+
+.btn-action:hover {
+  background: #e8ddf5;
+  border-color: #c0d0fe;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #313337;
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  background: white;
+  color: #313337;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4a3f9f;
+  box-shadow: 0 0 0 3px rgba(74, 63, 159, 0.1);
+}
+
+.form-group input:disabled {
+  background: #f5eaff;
+  cursor: not-allowed;
+  color: #999;
+}
+
+.form-error {
+  padding: 10px 12px;
+  background: #ffe8e8;
+  color: #c33;
+  border-radius: 6px;
+  font-size: 0.9em;
+  border-left: 4px solid #f00;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
